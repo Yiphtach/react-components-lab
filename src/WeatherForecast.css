@@ -9,7 +9,7 @@ h1 {
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    min-height: 100vh; /* Make sure it takes the full viewport height */
+    min-height: 100vh; 
     margin: 0;
   }
   
@@ -18,11 +18,11 @@ h1 {
     display: flex;
     justify-content: center; /* Center the .weather components horizontally */
     align-items: center; /* Center the .weather components vertically */
-    flex-wrap: wrap; /* Allow wrapping for better responsiveness */
-    width: 100%; /* Make sure section takes the full width of the parent container */
+    flex-wrap: wrap; 
+    width: 100%; 
   }
   
-  /* Styling for each .weather component */
+  
   section .weather {
     border: 1px solid #ccc;
     padding: 16px;
@@ -31,7 +31,7 @@ h1 {
     min-width: 150px;
   }
   
-  /* Weather data styling */
+ 
   .weather-data span {
     font-weight: bold;
     color: #ffffff;
