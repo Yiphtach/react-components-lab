@@ -1,29 +1,24 @@
 h1 {
     text-align: center; /* Center the text */
-    margin-bottom: 20px; /* Optional: Add some space below the title */
+    margin-bottom: 20px; /* Add some space below the title */
   }
   
 section {
     display: flex;
-    justify-content: center; /* Centers the .weather divs horizontally */
-    align-items: center; /* Centers the .weather divs vertically */
-    gap: 10px; /* Adds space between the weather components */
-    flex-wrap: wrap; /* Allows the items to wrap to the next line if needed */
+    justify-content: center; /* Center the .weather components horizontally */
+    align-items: center; /* Center the .weather components vertically if necessary */
+    flex-wrap: wrap; /* Allow wrapping for better responsiveness */
   }
   
   section .weather {
-    border: 1px solid #070707;
-    border-radius: 5px;
+    border: 1px solid #ccc;
+    border-radius: 0; /* Remove border-radius to ensure the borders touch */
     padding: 20px;
     text-align: center;
-    background-color: #ffffff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 150px; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }  
+    flex: 0 1 200px; /* Set a flexible width with a base size */
+    box-shadow: none; /* Remove shadow to make borders touch seamlessly */
+    margin: -1px; /* Overlap the borders slightly to remove spacing between them */
+  }
   
   .weather-icon {
     width: 40px;
@@ -38,17 +33,17 @@ section {
   .weather-data h2 {
     font-size: 1.5em;
     margin-bottom: 5px;
-    color: #333;
+    color: #ffffff;
   }
   
   .weather-data p {
     margin: 5px 0;
-    color: #555;
+    color: #ffffff;
   }
   
   .weather-data span {
     font-weight: bold;
-    color: #000;
+    color: #ffffff;
   }  
   
   
